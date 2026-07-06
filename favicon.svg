@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Body shape: BMW 4-series cabrio side profile -->
+  <path d="
+    M4,38
+    C4,38 6,30 10,27
+    C13,25 20,23 26,23
+    C32,23 37,25 41,28
+    C44,30 47,33 50,35
+    L60,35 L60,42
+    L56,42
+    C55,39 52,37 49,37
+    C46,37 43,39 42,42
+    L22,42
+    C21,39 18,37 15,37
+    C12,37 9,39 8,42
+    L4,42 Z
+  " fill="#111111"/>
+
+  <!-- Windshield (small open-top wedge) -->
+  <path d="M26,23 C28,23 32,23 35,23 L32,30 L22,30 Z" fill="#2a4a80" opacity="0.75"/>
+
+  <!-- Hood highlight -->
+  <path d="M41,28 C44,30 47,33 50,35 L60,35 L60,33 L52,33 C49,31 45,28 41,27 Z" fill="#222222"/>
+
+  <!-- Front wheel -->
+  <circle cx="15" cy="43" r="9" fill="#1a1a1a"/>
+  <circle cx="15" cy="43" r="6" fill="#555"/>
+  <circle cx="15" cy="43" r="3.5" fill="#999"/>
+  <circle cx="15" cy="43" r="1.5" fill="#ccc"/>
+
+  <!-- Rear wheel -->
+  <circle cx="49" cy="43" r="9" fill="#1a1a1a"/>
+  <circle cx="49" cy="43" r="6" fill="#555"/>
+  <circle cx="49" cy="43" r="3.5" fill="#999"/>
+  <circle cx="49" cy="43" r="1.5" fill="#ccc"/>
+
+  <!-- Headlight -->
+  <path d="M4,38 L4,34 L8,33 L10,36 L7,38 Z" fill="#e8eaf0" opacity="0.9"/>
+
+  <!-- Body shine -->
+  <path d="M14,25 C18,24 24,23.5 28,23.5 L34,23.5 L30,27 L20,28 Z" fill="white" opacity="0.08"/>
+</svg>
