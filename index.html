@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onze auto te koop</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #f5f5f5; color: #222; }
+    header { background: #1a1a1a; color: #fff; padding: 2rem; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    header p { color: #aaa; }
+    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .prijs { font-size: 2.5rem; font-weight: bold; color: #c00; margin: 1rem 0; }
+    .details { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+    .detail { background: #fff; border-radius: 8px; padding: 1rem; }
+    .detail strong { display: block; font-size: 0.75rem; text-transform: uppercase; color: #888; margin-bottom: 0.25rem; }
+    .fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; margin: 2rem 0; }
+    .fotos img { width: 100%; border-radius: 6px; object-fit: cover; aspect-ratio: 4/3; }
+    .contact { background: #fff; border-radius: 8px; padding: 1.5rem; text-align: center; margin-top: 2rem; }
+    .contact a { display: inline-block; background: #c00; color: #fff; padding: 0.75rem 2rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
+    .omschrijving { background: #fff; border-radius: 8px; padding: 1.5rem; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><!-- MERK MODEL JAAR --></h1>
+  <p>Particuliere verkoop &bull; Noordwijk</p>
+</header>
+
+<div class="container">
+
+  <div class="prijs">€ <!-- VRAAGPRIJS --></div>
+
+  <div class="details">
+    <div class="detail"><strong>Bouwjaar</strong><!-- JAAR --></div>
+    <div class="detail"><strong>Kilometerstand</strong><!-- KM --></div>
+    <div class="detail"><strong>Brandstof</strong><!-- BRANDSTOF --></div>
+    <div class="detail"><strong>Transmissie</strong><!-- HAND/AUTO --></div>
+    <div class="detail"><strong>Kleur</strong><!-- KLEUR --></div>
+    <div class="detail"><strong>APK</strong><!-- APK TOT --></div>
+  </div>
+
+  <div class="omschrijving">
+    <h2>Omschrijving</h2>
+    <p style="margin-top:1rem"><!-- OMSCHRIJVING --></p>
+  </div>
+
+  <div class="fotos">
+    <!-- Voeg hier img-tags toe, bijv: <img src="fotos/voor.jpg" alt="Voorkant"> -->
+  </div>
+
+  <div class="contact">
+    <h2>Interesse?</h2>
+    <p>Bel of app voor een bezichtiging.</p>
+    <a href="tel:<!-- TELEFOONNUMMER -->">Bel ons</a>
+    <a href="https://wa.me/31<!-- TELEFOONNUMMER -->">WhatsApp</a>
+  </div>
+
+</div>
+
+</body>
+</html>
