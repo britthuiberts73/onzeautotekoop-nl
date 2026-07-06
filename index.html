@@ -50,6 +50,8 @@
     .btn-bel { background: #1a4fa0; color: #fff; }
     .btn-wa  { background: #25d366; color: #fff; }
 
+    .teller { text-align: center; color: #888; font-size: 0.85rem; margin-bottom: 1.5rem; }
+
     .videos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
     @media (max-width: 600px) { .videos { grid-template-columns: 1fr; } }
     .videos h2 { grid-column: 1 / -1; font-size: 1.1rem; margin-bottom: 0; }
@@ -193,6 +195,8 @@
     </div>
   </div>
 
+  <p class="teller">&#128065; Deze pagina is <strong id="tellerAantal">...</strong> keer bekeken</p>
+
   <div class="contact">
     <h2>Interesse?</h2>
     <p>Bel of app voor een bezichtiging in Noordwijk.</p>
@@ -224,6 +228,12 @@
     if (e.key === 'ArrowLeft')  open((cur - 1 + imgs.length) % imgs.length);
     if (e.key === 'ArrowRight') open((cur + 1) % imgs.length);
   });
+
+  // Bezoekteller
+  fetch('https://api.countapi.xyz/hit/onzeautotekoop.nl/bezoeken')
+    .then(r => r.json())
+    .then(d => { document.getElementById('tellerAantal').textContent = d.value.toLocaleString('nl-NL'); })
+    .catch(() => { document.querySelector('.teller').style.display = 'none'; });
 </script>
 
 </body>
