@@ -231,9 +231,13 @@
   });
 
   // Bezoekteller
-  fetch('https://api.countapi.xyz/hit/onzeautotekoop.nl/bezoeken')
+  fetch('https://hits.dwyl.com/britthuiberts73/onzeautotekoop-nl.svg')
+    .then(() => {})
+    .catch(() => {});
+
+  fetch('https://api.counterapi.dev/v1/onzeautotekoop/bezoeken/up')
     .then(r => r.json())
-    .then(d => { document.getElementById('tellerAantal').textContent = d.value.toLocaleString('nl-NL'); })
+    .then(d => { document.getElementById('tellerAantal').textContent = Number(d.count).toLocaleString('nl-NL'); })
     .catch(() => { document.querySelector('.teller').style.display = 'none'; });
 </script>
 
